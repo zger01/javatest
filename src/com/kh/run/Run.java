@@ -1,6 +1,5 @@
 package com.kh.run;
 
-import java.time.LocalDate;
 
 import com.kh.MemberView.MBTIView;
 
