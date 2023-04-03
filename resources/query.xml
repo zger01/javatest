@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<entry key="idCheck">
+		SELECT *
+		FROM MBTI
+		WHERE USERID = ? 
+	</entry>
+	
+	<entry key="selectAllUser">
+		SELECT *
+		FROM MBTI
+	</entry>
+	
+	<entry key="deleteUser">
+		DELETE
+		FROM MBTI
+		WHERE USERID = ?
+	</entry>
+	
+	<entry key="searchMBTI">
+		SELECT *
+		FROM MBTI
+		WHERE MBTI LIKE ?
+	</entry>
+	
+	<entry key="searchByUserName">
+		SELECT *
+		FROM MBTI
+		WHERE USERNAME = ?
+	</entry>
+	
+	<entry key="MBTITest">
+		UPDATE MBTI
+		SET MBTI = ?
+		WHERE USERID = ?
+	</entry>
+	
+	<entry key="checkMyMBTI">
+		SELECT *
+		FROM MBTI
+		WHERE USERID = ?
+	</entry>
+	
+	<entry key="updateMyPwd">
+		UPDATE MBTI
+		SET USERPWD = ?
+		WHERE USERID = ? 
+	</entry>
+	
+	<entry key="insertUserInfo">
+		INSERT INTO MBTI (USERID
+						, USERPWD
+						, USERNAME
+						, BIRTH_DATE
+						, GENDER
+						, TEST_DATE
+						)
+		VALUES(?
+			 , ?
+			 , ?
+			 , TO_DATE( ? , 'RRMMDD')
+			 , ?
+			 , DEFAULT)
+	</entry>
+	
+</properties>
