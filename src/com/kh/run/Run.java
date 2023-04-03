@@ -9,7 +9,7 @@ public class Run {
 	// git commit
 	public static void main(String[] args) {
 		
-		new MBTIView().mainMenu();dfdf
+		new MBTIView().mainMenu();
 
 	}
 }
